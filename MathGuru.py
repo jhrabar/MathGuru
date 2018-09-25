@@ -1,4 +1,4 @@
-#John Hrabar, Matt Swentzel
+#John Hrabar, Matt Swentzel, Jaroor Modi
 #SSW555
 #I Pledge My Honor That I Have Abided By The Stevens Honor System
 
@@ -7,10 +7,23 @@ def power(number):
 	return pow(2,number)
 
 def factorial(number):
-	#returns the factorial of a given number 
+	#returns the factorial of a given number
 	if(number == 0):
 		return 1
 	return number * factorial(number - 1)
+
+def fab(number):
+	#returns the nth fibonacci number, starting with index 1
+	if number <= 0:
+		print('ERROR: Input must be greater than 0')
+		return -1
+	elif number == 1:
+		return 0
+	elif number == 2:
+		return 1
+	else:
+		return fab(number-1)+fab(number-2)
+		
 
 while(True):
 	while(True):
@@ -39,5 +52,3 @@ while(True):
 	if(cont == "no"):
 		print("Goodbye!")
 		break
-
-
