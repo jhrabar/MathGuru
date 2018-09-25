@@ -1,10 +1,16 @@
-#John Hrabar
+#John Hrabar, Matt Swentzel
 #SSW555
 #I Pledge My Honor That I Have Abided By The Stevens Honor System
 
 def power(number):
+	#returns the number to the power of 2
 	return pow(2,number)
 
+def factorial(number):
+	#returns the factorial of a given number 
+	if(number == 0):
+		return 1
+	return number * factorial(number - 1)
 
 while(True):
 	while(True):
